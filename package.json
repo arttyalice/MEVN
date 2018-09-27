@@ -1,0 +1,16 @@
+{
+  "name": "demo-project",
+  "version": "0.0.1",
+  "description": "Info about app",
+  "main": "index.js",
+  "scripts": {
+    	"install-back":"npm install --prefix backend",
+	"install-front": "npm install --prefix frontend",
+	"dev": "concurrently --kill-others \"npm run server --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "author": "Mean Onkanya",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
